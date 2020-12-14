@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div class="container">
+    <form method="post" action="newpassword" id="form1"> {% csrf_token %}
+    <div class="form-group">
+        Enter OTP:
+        <input type="text" class="form-control" name="text1">
+    </div>
+    <div class="form-group">
+        Enter email:
+        <input type="text" class="form-control" name="text2" value="{{ ar.email }}">
+    </div>
+    <div class="form-group">
+        Enter mobile number:
+        <input type="text"  class="form-control" name="text3" value="{{ ar.mobilenumber }}">
+    </div>
+    <div class="form-group">
+        <input type="submit" class="btn btn-danger" value="Reset password">
+    </div>
+    </form>
+
+
+
+</body>
+</html>
